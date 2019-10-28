@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C84E111-CE8C-4EC4-A276-8CC56CD5C61D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Poll.My.MyApplication</StartupObject>
+    <RootNamespace>Poll</RootNamespace>
+    <AssemblyName>Poll</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Poll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Poll.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdLogin.Designer.vb">
+      <DependentUpon>AdLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminhm.Designer.vb">
+      <DependentUpon>Adminhm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Adminhm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPass.Designer.vb">
+      <DependentUpon>AdminPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdSign.Designer.vb">
+      <DependentUpon>AdSign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdSign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Airlab.Designer.vb">
+      <DependentUpon>Airlab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Airlab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Airmon.Designer.vb">
+      <DependentUpon>Airmon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Airmon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AirQulRep.Designer.vb">
+      <DependentUpon>AirQulRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AirQulRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Approve.Designer.vb">
+      <DependentUpon>Approve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Approve.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Awar.Designer.vb">
+      <DependentUpon>Awar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Awar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biodeg.Designer.vb">
+      <DependentUpon>Biodeg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Biodeg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dm.Designer.vb">
+      <DependentUpon>Dm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emphm.Designer.vb">
+      <DependentUpon>Emphm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Emphm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpLogin.Designer.vb">
+      <DependentUpon>EmpLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmpLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpPass.Designer.vb">
+      <DependentUpon>EmpPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmpPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empr.Designer.vb">
+      <DependentUpon>Empr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Empr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hazar.Designer.vb">
+      <DependentUpon>Hazar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hazar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modi.Designer.vb">
+      <DependentUpon>Modi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="NoiMonRep.Designer.vb">
+      <DependentUpon>NoiMonRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NoiMonRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Noisemon.Designer.vb">
+      <DependentUpon>Noisemon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Noisemon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NonBio.Designer.vb">
+      <DependentUpon>NonBio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NonBio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="polDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>polDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PubNot.Designer.vb">
+      <DependentUpon>PubNot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PubNot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add.Designer.vb">
+      <DependentUpon>Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAd.Designer.vb">
+      <DependentUpon>ViewAd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAwar.Designer.vb">
+      <DependentUpon>ViewAwar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAwar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaterLab.Designer.vb">
+      <DependentUpon>WaterLab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WaterLab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Watermon.Designer.vb">
+      <DependentUpon>Watermon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Watermon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WatqulRep.Designer.vb">
+      <DependentUpon>WatqulRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WatqulRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wel.Designer.vb">
+      <DependentUpon>Wel.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdLogin.resx">
+      <DependentUpon>AdLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminhm.resx">
+      <DependentUpon>Adminhm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPass.resx">
+      <DependentUpon>AdminPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdSign.resx">
+      <DependentUpon>AdSign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Airlab.resx">
+      <DependentUpon>Airlab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Airmon.resx">
+      <DependentUpon>Airmon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AirQulRep.resx">
+      <DependentUpon>AirQulRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Approve.resx">
+      <DependentUpon>Approve.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Awar.resx">
+      <DependentUpon>Awar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Biodeg.resx">
+      <DependentUpon>Biodeg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dm.resx">
+      <DependentUpon>Dm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emphm.resx">
+      <DependentUpon>Emphm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpLogin.resx">
+      <DependentUpon>EmpLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpPass.resx">
+      <DependentUpon>EmpPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empr.resx">
+      <DependentUpon>Empr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hazar.resx">
+      <DependentUpon>Hazar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modi.resx">
+      <DependentUpon>Modi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoiMonRep.resx">
+      <DependentUpon>NoiMonRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Noisemon.resx">
+      <DependentUpon>Noisemon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NonBio.resx">
+      <DependentUpon>NonBio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PubNot.resx">
+      <DependentUpon>PubNot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add.resx">
+      <DependentUpon>Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAd.resx">
+      <DependentUpon>ViewAd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAwar.resx">
+      <DependentUpon>ViewAwar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaterLab.resx">
+      <DependentUpon>WaterLab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Watermon.resx">
+      <DependentUpon>Watermon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatqulRep.resx">
+      <DependentUpon>WatqulRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wel.resx">
+      <DependentUpon>Wel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="polDataSet.xsc">
+      <DependentUpon>polDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="polDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>polDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="polDataSet.xss">
+      <DependentUpon>polDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Karnataka_Flag%28INDIA%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pol.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pol_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>pol.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
